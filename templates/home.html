@@ -1,0 +1,12 @@
+<div class="container text-center text-success">
+    {% for i in ls %}
+    <div>
+        <h1 class="container text-success">
+            <a href="{% url 'details' i.id %}" class="container">{{i.title}}</a>
+        </h1>
+        <h3>
+            {{i.date}}
+        </h3>
+    </div><br>
+    {% endfor %}
+</div>
